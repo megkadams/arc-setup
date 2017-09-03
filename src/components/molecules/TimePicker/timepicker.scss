@@ -1,0 +1,46 @@
+@import './src/styles/variables.scss';
+
+.searchable-select.timepicker {
+  max-width: 182px;
+  display: inline-block;
+  &.error {
+    margin-bottom: 8px;
+    border-color: $fdanger;
+  }
+}
+
+.timepicker .searchable-select-input {
+  width: 100%;
+  margin: 0;
+  padding: 0.7em 2.75rem 0.7em 1rem;
+  flex: 1 0 100%;
+  font-size: 0.875rem;
+  background: transparent;
+}
+
+.timepicker .searchable-select-activate-dropdown {
+  width: 3rem;
+  color: $fsilver;
+  font-size: 0.875rem;
+  right: 1px;
+  span {
+    position: absolute;
+    top: 11px;
+    right: 1rem;
+  }
+}
+
+.timepicker {
+  .searchable-select-dropdown {
+    li {
+      font-size: 0.875rem;
+    }
+  }
+  &.error {
+    .searchable-select-dropdown {
+      border-right-color: $fdanger;
+      border-left-color: $fdanger;
+      border-bottom-color: $fdanger;
+    }
+  }
+}
